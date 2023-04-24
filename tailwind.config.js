@@ -13,6 +13,9 @@ export default {
 				background: '#FFFFFF',
 				black: '#121212'
 			}
+		},
+		fontFamily: {
+			mono: ['SFMono-Regular', 'ui-monospace', 'Menlo', 'Consolas', 'Courier New']
 		}
 	},
 	plugins: []

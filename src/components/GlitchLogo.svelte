@@ -49,7 +49,7 @@
 
 	@keyframes svg-glitch-effect {
 		@for $i from 0 through $steps {
-			#{percentage($i*(1/$steps))} {
+			#{percentage($i*(calc(1 / $steps)))} {
 				clip: rect(random(95) + px, 1000px, random(50) + px, 0);
 			}
 		}

@@ -3,7 +3,11 @@
 	import ToggleTheme from './ToggleTheme.svelte';
 </script>
 
-<div class="flex justify-between items-center h-20">
+<div class="flex justify-between items-center h-28">
 	<GlitchLogo />
-	<ToggleTheme />
+	<div class="flex justify-between items-center gap-10">
+		<a>Blog</a>
+		<a>Contact</a>
+		<ToggleTheme />
+	</div>
 </div>
