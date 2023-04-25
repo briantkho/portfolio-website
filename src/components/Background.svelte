@@ -7,27 +7,33 @@
 		cursorPosition.x = e.clientX - circleSize / 2;
 		cursorPosition.y = e.clientY - circleSize / 2;
 	};
+	// style="transform: translate({cursorPosition.x}px, {cursorPosition.y}px); height: {circleSize +
+	// 	150}px"
+
+	// style="transform: translate({cursorPosition.x}px, {cursorPosition.y}px);"
+
+	// style="transform: translate({cursorPosition.x +
+	// 100}px, {cursorPosition.y}px); height: {circleSize + 100}px"
 </script>
 
-<div
-	class="w-screen h-screen absolute dark:bg-dark-background bg-light-background top-0 left-0 -z-50 transition-all duration-300 overflow-hidden"
-	on:mousemove={handleMouseMove}
->
-	<section class="w-screen h-screen absolute bg-[#55BCD2] mix-blend-overlay" />
-	<section class="w-screen h-screen absolute bg-dark-background mix-blend-overlay" />
-	<section
-		class="bg-[#5EB1FF] aspect-square absolute rounded-full duration-700 top-1/4 left-3/4 blur-3xl opacity-20 ease-linear"
-		style="transform: translate({cursorPosition.x}px, {cursorPosition.y}px); height: {circleSize +
-			150}px"
-	/>
-	<section
-		class="bg-[#FF0099] absolute aspect-square rounded-full duration-1000 blur-3xl opacity-10 bottom-0 -left-1/4 ease-in-out"
-		style="transform: translate({cursorPosition.x}px, {cursorPosition.y}px); height: {circleSize +
-			500}px;"
-	/>
-	<section
-		class="bg-[#3EF4DF] aspect-square absolute rounded-full duration-500 right-2/4 bottom-2/4 blur-3xl opacity-20"
-		style="transform: translate({cursorPosition.x +
-			100}px, {cursorPosition.y}px); height: {circleSize + 100}px"
-	/>
-</div>
+<html lang="">
+	<div
+		class="w-screen h-screen absolute dark:bg-dark-background bg-light-background top-0 left-0 -z-50 transition-all duration-300 overflow-hidden"
+		on:mousemove={handleMouseMove}
+	>
+		<!-- <section class="w-screen h-screen absolute bg-[#55BCD2] mix-blend-overlay" /> -->
+		<section
+			class="w-screen h-screen absolute bg-dark-background z-10 bg-blend-overlay opacity-80"
+		/>
+		<section class="bg-[#122392] aspect-video absolute rounded-full blur-3xl w-1/3 top-0 left-0" />
+		<section
+			class="bg-[#a90926] absolute aspect-video rounded-full blur-3xl w-full -bottom-3/4 rotate-12"
+		/>
+		<section
+			class="bg-[#DB00FF] absolute aspect-square rounded-full blur-3xl w-1/3 -top-1/4 right-0 opacity-75"
+		/>
+		<section
+			class="bg-[#3EF4DF] aspect-square absolute rounded-full blur-3xl w-2/6 right-0 -bottom-1/4 opacity-40"
+		/>
+	</div>
+</html>
