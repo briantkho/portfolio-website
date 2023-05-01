@@ -1,14 +1,11 @@
 <script lang="ts">
 	let cursorPosition = { x: 0, y: 0 };
 
-	const circleSize = 400;
-
-	const handleMouseMove = (e: any) => {
-		cursorPosition.x = e.clientX - circleSize / 2;
-		cursorPosition.y = e.clientY - circleSize / 2;
+	const handleMouseMove = (e: MouseEvent) => {
+		// e.bubbles();
+		cursorPosition.x = e.clientX;
+		cursorPosition.y = e.clientY;
 	};
-	// style="transform: translate({cursorPosition.x}px, {cursorPosition.y}px); height: {circleSize +
-	// 	150}px"
 
 	// style="transform: translate({cursorPosition.x}px, {cursorPosition.y}px);"
 
@@ -18,22 +15,41 @@
 
 <html lang="">
 	<div
-		class="w-screen h-screen absolute dark:bg-dark-background bg-light-background top-0 left-0 -z-50 transition-all duration-300 overflow-hidden"
+		class="w-screen h-screen absolute dark:bg-dark-background bg-light-background top-0 left-0 transition-all duration-300 overflow-hidden -z-50"
 		on:mousemove={handleMouseMove}
 	>
-		<!-- <section class="w-screen h-screen absolute bg-[#55BCD2] mix-blend-overlay" /> -->
-		<section
-			class="w-screen h-screen absolute bg-dark-background z-10 bg-blend-overlay opacity-80"
+		<!-- <section
+			id="blob"
+			class="duration-300 ease-linear"
+			style="transform: translate({cursorPosition.x - 250}px, {cursorPosition.y - 250}px);"
 		/>
-		<section class="bg-[#122392] aspect-video absolute rounded-full blur-3xl w-1/3 top-0 left-0" />
-		<section
-			class="bg-[#a90926] absolute aspect-video rounded-full blur-3xl w-full -bottom-3/4 rotate-12"
-		/>
-		<section
-			class="bg-[#DB00FF] absolute aspect-square rounded-full blur-3xl w-1/3 -top-1/4 right-0 opacity-75"
-		/>
-		<section
-			class="bg-[#3EF4DF] aspect-square absolute rounded-full blur-3xl w-2/6 right-0 -bottom-1/4 opacity-40"
-		/>
+		<div class="absolute w-full h-full backdrop-blur-3xl" /> -->
 	</div>
 </html>
+
+<style lang="scss">
+	#blob {
+		position: absolute;
+		background-color: white;
+		height: 500px;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		background: linear-gradient(to right, #5eb1ff, #ff0099);
+		opacity: 50%;
+		animation: rotate 10s infinite;
+	}
+
+	@keyframes rotate {
+		// from {
+		// 	transform: rotate(0deg);
+		// }
+
+		50% {
+			scale: 1 1.5;
+		}
+
+		// to {
+		// 	transform: rotate(360deg);
+		// }
+	}
+</style>
