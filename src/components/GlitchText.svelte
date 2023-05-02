@@ -7,7 +7,6 @@
 	};
 
 	const decodeChar = (element: HTMLElement, word: string, expectedWord: string, i: number) => {
-		element.style.display = 'block';
 		element.innerText = word
 			.split('')
 			.map((letter, index) => {
@@ -20,15 +19,12 @@
 	};
 
 	const addEncodedWord = async (element: HTMLElement, length: number) => {
-		element.dataset.value = '';
-		element.innerText = '';
 		for (let i = 0; i < length; i++) {
 			const randomText: string = `${element.dataset.value}${
 				letters[Math.floor(Math.random() * 26)]
 			}`;
 			element.dataset.value = randomText;
 			element.innerText = randomText;
-			console.log(randomText);
 			await timeout(100);
 		}
 	};
@@ -58,12 +54,12 @@
 				for (let word of wordArray) {
 					element.dataset.value = '';
 					element.innerText = '';
-					await timeout(1000);
 					await addEncodedWord(element, word.length);
-					await timeout(500);
+					await timeout(250);
 					await decodeWord(element, word);
 					await timeout(1000);
 					await removeWord(element);
+					await timeout(1000);
 				}
 			}
 		};
@@ -72,4 +68,4 @@
 	};
 </script>
 
-<h1 use:onLoad class="text-2xl" style="display:none;">&nbsp;</h1>
+<h1 use:onLoad class="text-2xl">&nbsp;</h1>

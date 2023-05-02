@@ -22,7 +22,9 @@
 		<p class="text-2xl">Which pill will you pick to embark on your journey?</p>
 		<div class="flex gap-10">
 			<div class="flex flex-col items-center justify-center">
-				<a class="bg-[#55D7E7] text-lg px-7 py-1 rounded-xl cursor-pointer" href="/">Blue Pill</a>
+				<a class="bg-[#55D7E7] text-lg px-7 py-1 rounded-xl cursor-pointer" href="#work"
+					>Blue Pill</a
+				>
 				<p class="text-sm">for the browsers</p>
 			</div>
 			<div class="flex flex-col items-center justify-center">
