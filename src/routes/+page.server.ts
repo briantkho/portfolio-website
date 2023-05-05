@@ -7,7 +7,7 @@ export async function load({ fetch }) {
 		const workRes = await fetch(`${url}/work`);
 		const workData = await workRes.json();
 
-		const projectRes = await fetch(`${url}/project`);
+		const projectRes = await fetch(`${url}/projects`);
 		const projectData = await projectRes.json();
 
 		const skillRes = await fetch(`${url}/skill`);
