@@ -16,7 +16,16 @@ export async function load({ fetch }) {
 		const contactRes = await fetch(`${url}/contact`);
 		const contactData = await contactRes.json();
 
-		return { work: workData, project: projectData, skill: skillData, contact: contactData };
+		const aboutRes = await fetch(`${url}/about`);
+		const aboutData = await aboutRes.json();
+
+		return {
+			work: workData,
+			project: projectData,
+			skill: skillData,
+			contact: contactData,
+			about: aboutData
+		};
 	};
 
 	const data = await getData();

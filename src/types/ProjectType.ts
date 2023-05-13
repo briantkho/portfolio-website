@@ -6,6 +6,9 @@ export type ProjectElement = {
 	title: string;
 	status: number;
 	description: string;
+	summary: string;
+	repo: string;
+	url: string;
 	technology: [string];
 	image: string;
 };

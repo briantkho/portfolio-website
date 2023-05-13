@@ -1,5 +1,13 @@
 <script lang="ts">
 	import GlitchText from '../components/GlitchText.svelte';
+	const wordArray = [
+		'software developer',
+		'full-stack developer',
+		'designer',
+		'critical thinker',
+		'great collaborator',
+		'motivated learner'
+	];
 
 	let show = false;
 
@@ -14,7 +22,7 @@
 		<div class="flex">
 			<p class="text-2xl">I am a&nbsp;</p>
 			{#if show}
-				<GlitchText />
+				<GlitchText {wordArray} />
 			{/if}
 		</div>
 	</div>

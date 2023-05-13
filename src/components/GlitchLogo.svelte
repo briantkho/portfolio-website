@@ -1,7 +1,8 @@
 <script lang="ts">
+	export let logoSize = 2.5;
 </script>
 
-<div class="relative w-10">
+<div class="relative" style="width: {logoSize}rem; min-width: {logoSize}rem;">
 	<div class="stack" style="--stacks: 3;">
 		<span style="--index: 0; white-space: nowrap;" class="text-mono"
 			><svg

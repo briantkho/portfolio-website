@@ -1,6 +1,6 @@
 <script lang="ts">
 	const letters = 'abcdefghijklmnopqrstuvwxyz';
-	const wordArray = ['developer', 'student', 'enthusiast'];
+	export let wordArray: string[];
 
 	const timeout = (time: number) => {
 		return new Promise((resolve) => setTimeout(resolve, time));
