@@ -54,6 +54,7 @@
 				for (let word of wordArray) {
 					element.dataset.value = '';
 					element.innerText = '';
+
 					await addEncodedWord(element, word.length);
 					await timeout(250);
 					await decodeWord(element, word);

@@ -21,7 +21,7 @@
 					<div
 						class="project-details bg-dark-background bg-opacity-50 backdrop-blur-md transition-all"
 					>
-						<div class="w-full h-full p-12 flex flex-col justify-end gap-2">
+						<div class="w-full h-full p-12 flex flex-col justify-end gap-2 text-dark-ow">
 							<h1 class="font-bold text-5xl">
 								{project.title}
 							</h1>

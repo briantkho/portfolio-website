@@ -1,5 +1,6 @@
 <script lang="ts">
 	export let data;
+	import Footer from '../components/Footer.svelte';
 	import About from '../pages/About.svelte';
 	import Landing from '../pages/Landing.svelte';
 	import Projects from '../pages/Projects.svelte';
@@ -13,6 +14,7 @@
 </script>
 
 <Landing />
-<About data={about} />
 <Work data={work} />
 <Projects data={projects} />
+<About data={about} />
+<Footer data={contact} />
