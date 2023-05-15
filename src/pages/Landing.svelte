@@ -30,20 +30,26 @@
 		<p class="text-2xl">Which pill will you pick to embark on your journey?</p>
 		<div class="flex gap-10">
 			<div class="flex flex-col items-center justify-center gap-2">
-				<!-- !!! Add animation -->
-				<a class="bg-[#55D7E7] text-lg px-7 py-1 rounded-xl cursor-pointer" href="#work"
-					>Blue Pill</a
+				<a
+					class="hover-blue bg-[#55D7E7] text-lg px-7 py-1 rounded-xl cursor-pointer hover:bg-[#3EACC6] transition-all duration-150"
+					href="#work"
 				>
+					Blue Pill
+				</a>
 				<p class="text-sm">for the browsers</p>
 			</div>
 			<div class="flex flex-col items-center justify-center gap-2">
-				<!-- !!! Add animation -->
 				<a
-					class="bg-[#FF1F6F] text-lg px-7 py-1 rounded-xl cursor-pointer"
-					href="https://terminal.brianho.tech/">Red Pill</a
+					class="bg-[#FF1F6F] hover:bg-[#DB1670] transition-all duration-150 text-lg px-7 py-1 rounded-xl cursor-pointer"
+					href="https://terminal.brianho.tech/"
 				>
+					Red Pill
+				</a>
 				<p class="text-sm">for the enthusiasts</p>
 			</div>
 		</div>
 	</div>
 </div>
+
+<style>
+</style>
