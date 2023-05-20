@@ -13,8 +13,8 @@ export const load = (async ({ fetch }) => {
 		const projectRes = await fetch(`${url}/projects`);
 		const projectData = await projectRes.json();
 
-		const skillRes = await fetch(`${url}/skills`);
-		const skillData = await skillRes.json();
+		// const skillRes = await fetch(`${url}/skills`);
+		// const skillData = await skillRes.json();
 
 		const contactRes = await fetch(`${url}/contact`);
 		const contactData = await contactRes.json();
@@ -25,7 +25,7 @@ export const load = (async ({ fetch }) => {
 		return {
 			work: workData,
 			project: projectData,
-			skill: skillData,
+			// skill: skillData,
 			contact: contactData,
 			about: aboutData
 		};
@@ -34,6 +34,7 @@ export const load = (async ({ fetch }) => {
 	const data = await getData();
 
 	if (data) return data;
+	console.log(data);
 
 	error(404, 'Not found');
 }) satisfies PageLoad;

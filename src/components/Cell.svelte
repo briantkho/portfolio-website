@@ -7,6 +7,7 @@
 
 	let isExpanded = false;
 	let end = '';
+	let techString = '';
 
 	const start = `${startDate.slice(3, 10)}, ${startDate.slice(-4)}`;
 
@@ -16,6 +17,10 @@
 		end = 'Present';
 	}
 
+	for (let tech of technology) {
+		techString += `${tech}, `;
+	}
+
 	const clickHandler = () => {
 		isExpanded = !isExpanded;
 	};
@@ -23,30 +28,31 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
-	class="w-full h-min glass-bg flex flex-col justify-between rounded-3xl p-5 gap-2 hover:scale-[102%] transition-all duration-150 cursor-pointer"
+	class="w-full h-min glass-bg flex flex-col justify-between rounded-3xl p-5
+	gap-2 hover:scale-[102%] transition-all duration-150 cursor-pointer"
 	on:click={clickHandler}
 >
 	<div>
-		<div class="flex justify-between items-center w-full">
-			<h1 class="uppercase font-bold text-3xl">{role}</h1>
-			<p class="font-bold">{start} - {end}</p>
+		<div class="flex flex-col justify-between items-start w-full">
+			<h1 class="uppercase font-bold text-lg md:text-3xl sm:text-2xl">{role}</h1>
+			<p class="font-bold text-xs md:text-base sm:text-sm">{start} - {end}</p>
 		</div>
 		<div class="flex justify-between items-center w-full">
-			<p>{company} | {location}</p>
+			<p class="text-xs md:text-base sm:text-sm">{company} | {location}</p>
 		</div>
 	</div>
 	{#if isExpanded}
-		<div transition:slide class="flex flex-col gap-3">
+		<div transition:slide class="flex flex-col gap-3 w-full text-xs md:text-base sm:text-sm">
 			<div class="mx-6">
 				{#each description as item}
 					<p>- {item}</p>
 				{/each}
 			</div>
-			<div class="flex">
-				<p>Technology used:&nbsp;</p>
-				{#each technology as item}
-					<p>{item},&nbsp;</p>
-				{/each}
+			<div>
+				<p class="font-bold text-xs md:text-base sm:text-sm">Technology used:</p>
+				<p class="text-xs md:text-base sm:text-sm">
+					{techString.substring(0, techString.length - 2)}
+				</p>
 			</div>
 		</div>
 	{/if}

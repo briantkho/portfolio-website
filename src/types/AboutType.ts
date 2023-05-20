@@ -5,5 +5,5 @@ type AboutElement = {
 		timestamp: number;
 		date: string;
 	};
-	headshot: string;
+	headShot: string;
 };

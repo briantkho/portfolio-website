@@ -12,9 +12,7 @@
 	<div
 		class="revealPage w-screen h-screen bg-dark-background z-40 shadow-lg top-0 left-0 transition-all"
 	>
-		<p
-			class="z-50 text-dark-ow opacity-0 flex justify-center items-center h-full text-7xl font-bold"
-		>
+		<p class="z-50 text-dark-ow opacity-0 flex justify-center items-center h-full headerText">
 			WELCOME.
 		</p>
 	</div>

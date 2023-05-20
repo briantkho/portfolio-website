@@ -5,8 +5,8 @@ export type ProjectElement = {
 	};
 	title: string;
 	status: number;
+	completedDate: string;
 	description: string;
-	summary: string;
 	repo: string;
 	url: string;
 	technology: [string];

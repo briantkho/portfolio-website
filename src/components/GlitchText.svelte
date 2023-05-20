@@ -69,4 +69,4 @@
 	};
 </script>
 
-<h1 use:onLoad class="text-2xl">&nbsp;</h1>
+<h1 use:onLoad class="md:text-2xl sm:text-xl text-base">&nbsp;</h1>

@@ -10,5 +10,5 @@
 		themeDark ? theme.set('') : theme.set('dark');
 	}}
 >
-	<Icon icon="gg:dark-mode" class="w-5 h-auto" />
+	<Icon icon="gg:dark-mode" class="w-5 h-auto lg:w-6" />
 </button>

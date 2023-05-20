@@ -11,8 +11,8 @@
     h-32 border-t border-dark-background border-opacity-50 gap-2
     dark:border-dark-ow dark:border-opacity-50"
 >
-	<p class="text-lg">By Brian Ho</p>
-	<div class="flex text-2xl gap-2 justify-center">
+	<p class="lg:text-lg md:text-base sm:text-sm text-xs">By Brian Ho</p>
+	<div class="flex gap-2 justify-center lg:text-2xl sm:text-xl">
 		<a href={contact.github} target="_blank" class="hover:opacity-40 transition-all duration-200"
 			><Icon icon="mdi:github" /></a
 		>
