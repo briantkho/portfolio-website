@@ -9,7 +9,6 @@
 	const work = data.work;
 	const projects = data.project;
 	const about = data.about;
-	// const skill = data.skill;
 	const contact = data.contact;
 </script>
 
