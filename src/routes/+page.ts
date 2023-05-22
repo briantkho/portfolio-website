@@ -7,23 +7,31 @@ const url = 'https://www.api.brianho.tech';
 
 export const load = (async ({ fetch }) => {
 	const getData = async () => {
-		const workRes = await fetch(`${url}/work`);
-		const workData = await workRes.json();
+		const getWork = async () => {
+			const workRes = await fetch(`${url}/work`);
+			return await workRes.json();
+		};
 
-		const projectRes = await fetch(`${url}/project`);
-		const projectData = await projectRes.json();
+		const getProject = async () => {
+			const projectRes = await fetch(`${url}/project`);
+			return await projectRes.json();
+		};
 
-		const contactRes = await fetch(`${url}/contact`);
-		const contactData = await contactRes.json();
+		const getContact = async () => {
+			const contactRes = await fetch(`${url}/contact`);
+			return await contactRes.json();
+		};
 
-		const aboutRes = await fetch(`${url}/about`);
-		const aboutData = await aboutRes.json();
+		const getAbout = async () => {
+			const aboutRes = await fetch(`${url}/about`);
+			return await aboutRes.json();
+		};
 
 		return {
-			work: workData,
-			project: projectData,
-			contact: contactData,
-			about: aboutData
+			work: getWork(),
+			project: getProject(),
+			contact: getContact(),
+			about: getAbout()
 		};
 	};
 

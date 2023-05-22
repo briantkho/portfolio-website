@@ -15,7 +15,7 @@
 			continuously learning and staying up-to-date with the latest advancements in my field.<br
 			/><br />
 
-			I pride myself in being a great team member, I bring a combination of technical skills,
+			I pride myself in being a great team member. I bring a combination of technical skills,
 			adaptability, and a strong work ethic to every project I undertake. I thrive in collaborative
 			environments where ideas are freely exchanged, and I actively seek opportunities to contribute
 			my expertise while learning from others.<br /><br />
