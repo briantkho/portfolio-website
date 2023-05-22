@@ -9,10 +9,14 @@
 	let end = '';
 	let techString = '';
 
-	const start = `${startDate.slice(3, 10)}, ${startDate.slice(-4)}`;
+	const start = `${new Date(startDate).toDateString().slice(3, 10)}, ${new Date(startDate)
+		.toDateString()
+		.slice(-4)}`;
 
 	if (endDate) {
-		end = `${endDate.slice(3, 10)}, ${endDate.slice(-4)}`;
+		end = `${new Date(endDate).toDateString().slice(3, 10)}, ${new Date(endDate)
+			.toDateString()
+			.slice(-4)}`;
 	} else {
 		end = 'Present';
 	}
