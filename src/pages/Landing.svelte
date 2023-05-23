@@ -16,7 +16,7 @@
 	}, 300);
 </script>
 
-<div class="flex w-full justify-center items-center flex-col gap-10 h-screen 2xl:gap-16">
+<div class="flex w-full justify-center items-center flex-col gap-10 h-screen 2xl:gap-16 snap-start">
 	<div class="flex flex-col items-center justify-center">
 		<h1 class="headerText">BRIAN HO</h1>
 		<div class="flex">

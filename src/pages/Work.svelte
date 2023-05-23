@@ -18,7 +18,7 @@
 	}
 </script>
 
-<div id="work" class="flex justify-between items-center w-screen min-h-screen">
+<div id="work" class="flex justify-between items-center w-screen min-h-screen snap-start">
 	<div
 		class="w-full flex flex-col gap-3 mx-5 items-center
 		lg:mx-20

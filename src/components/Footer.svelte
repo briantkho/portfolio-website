@@ -9,7 +9,7 @@
 <div
 	class="w-screen flex flex-col justify-center items-center
     h-32 border-t border-dark-background border-opacity-50 gap-2
-    dark:border-dark-ow dark:border-opacity-50"
+    dark:border-dark-ow dark:border-opacity-50 snap-start"
 >
 	<p class="lg:text-lg md:text-base sm:text-sm text-xs">By Brian Ho</p>
 	<div class="flex gap-2 justify-center lg:text-2xl sm:text-xl">

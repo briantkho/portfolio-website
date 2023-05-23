@@ -3,7 +3,7 @@
 	export let data: AboutType;
 </script>
 
-<div class="w-screen flex flex-col justify-center gap-10 my-10 md:h-screen md:my-0">
+<div class="w-screen flex flex-col justify-center gap-10 my-10 md:h-screen md:my-0 snap-start">
 	<h1 class="headerText flex items-center justify-center">ABOUT</h1>
 	<div
 		class="flex flex-col-reverse gap-5 items-center justify-between 2xl:mx-20 md:mx-5 md:flex-row sm:mx-10"
