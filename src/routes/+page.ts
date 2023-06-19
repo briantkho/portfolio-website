@@ -3,7 +3,7 @@ import type { PageLoad } from './$types';
 
 export const ssr = false;
 
-const url = 'https://www.api.brianho.tech';
+const url = 'https://api.brianho.tech';
 
 export const load = (async ({ fetch }) => {
 	const getData = async () => {
