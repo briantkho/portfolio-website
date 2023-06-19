@@ -23,7 +23,7 @@
 </script>
 
 <h1 class="headerText w-screen py-5 flex items-center justify-center">PROJECTS</h1>
-<div class="w-screen snap-start">
+<div class="w-screen">
 	<div class="flex flex-col h-screen md:flex-row">
 		{#each projects as project}
 			<div class="div-hover overflow-hidden">
@@ -77,7 +77,6 @@
 	}
 
 	.div-hover:hover {
-		// width: 50%;
 		height: 50%;
 		clip-path: inset(0 0 0 0);
 	}
