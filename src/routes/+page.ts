@@ -27,11 +27,17 @@ export const load = (async ({ fetch }) => {
 			return await aboutRes.json();
 		};
 
+		const getLeadership = async () => {
+			const leadershipRes = await fetch(`${url}/leadership`);
+			return await leadershipRes.json();
+		};
+
 		return {
 			work: getWork(),
 			project: getProject(),
 			contact: getContact(),
-			about: getAbout()
+			about: getAbout(),
+			leadership: getLeadership()
 		};
 	};
 

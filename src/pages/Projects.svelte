@@ -23,7 +23,7 @@
 </script>
 
 <h1 class="headerText w-screen py-5 flex items-center justify-center">PROJECTS</h1>
-<div class="w-screen">
+<div class="overflow-x-scroll">
 	<div class="flex flex-col h-screen md:flex-row">
 		{#each projects as project}
 			<div class="div-hover overflow-hidden">
