@@ -12,7 +12,6 @@
 	const about = data.about;
 	const contact = data.contact;
 	const leadership = data.leadership;
-	console.log(data);
 </script>
 
 <Landing />
