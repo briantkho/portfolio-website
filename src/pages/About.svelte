@@ -9,18 +9,14 @@
 		class="flex flex-col-reverse gap-5 items-center justify-between 2xl:mx-20 md:mx-5 md:flex-row sm:mx-10"
 	>
 		<p class="text-xs mx-10 lg:w-1/2 md:text-base md:mx-5 sm:text-sm">
-			Hello!<br /><br /> I'm Brian, a final-year student at the University of British Columbia
-			studying Applied Biology and Computer Science. I enjoy getting involved in the student
-			community through club channels, as the Lead of the Google Developer Student Club's Official
-			UBC Chapter.<br /><br />
+			Hello! <br /><br /> I'm Brian, a recent graduate of the University of British Columbia with a
+			major in Applied Biology and Computer Science and a Software Developer at Copperleaf.
+			<br /><br />
 			During my time in the technology space, I have had the pleasure of working as a software developer
 			for companies in a wide variety of stages. In these roles, I learned a lot about product development
-			and good programming practices, and made sure to apply these new skills to my arsenal!<br
-			/><br />
-
-			Upon graduating this upcoming spring, I aim to continue my path in software development and am
-			interested in any roles that may help me on my journey.
-			<br /><br />
+			and good programming practices, and made sure to apply these new skills to my arsenal! I aim to
+			continue my path in software development and am interested in any roles that may help me on my
+			journey.<br /><br />
 
 			If you are interested in chatting about anything programming, Formula 1, or would like to work
 			together, please do no hesitate to reach out to me. I would love to chat!

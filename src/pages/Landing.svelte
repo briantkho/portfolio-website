@@ -3,6 +3,7 @@
 	const wordArray = [
 		'software developer',
 		'full-stack developer',
+		'technical writer',
 		'designer',
 		'critical thinker',
 		'great collaborator',
