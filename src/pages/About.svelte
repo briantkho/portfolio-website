@@ -9,8 +9,8 @@
 		class="flex flex-col-reverse gap-5 items-center justify-between 2xl:mx-20 md:mx-5 md:flex-row sm:mx-10"
 	>
 		<p class="text-xs mx-10 lg:w-1/2 md:text-base md:mx-5 sm:text-sm">
-			Hello! <br /><br /> I'm Brian, a recent graduate of the University of British Columbia with a
-			major in Applied Biology and Computer Science and a Software Developer at Copperleaf.
+			Hello! <br /><br /> I'm Brian, a graduate of the University of British Columbia with a major
+			in Applied Biology and Computer Science and a Software Developer at Copperleaf.
 			<br /><br />
 			During my time in the technology space, I have had the pleasure of working as a software developer
 			for companies in a wide variety of stages. In these roles, I learned a lot about product development
