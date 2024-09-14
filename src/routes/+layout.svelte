@@ -10,7 +10,7 @@
 
 <div class={currentTheme}>
 	<main
-		class="dark:fill-dark-ow dark:text-dark-ow text-light-black transition-all duration-30000 font-mono overflow-x-hidden"
+		class="dark:fill-dark-ow dark:text-dark-ow text-light-black transition-all duration-30000 font-mono overflow-hidden"
 	>
 		<Navbar />
 		<slot />

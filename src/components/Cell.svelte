@@ -8,14 +8,19 @@
 	let end = '';
 	let techString = '';
 
-	const start = `${new Date(data.startDate).toDateString().slice(3, 10)}, ${new Date(data.startDate)
-		.toDateString()
-		.slice(-4)}`;
+	const startMonth = new Date(data.startDate)
+		.toLocaleString('default', { month: 'long' })
+		.slice(0, 3);
+	const startYear = new Date(data.startDate).getFullYear();
+	const start = `${startMonth} ${startYear}`;
 
 	if (data.endDate) {
-		end = `${new Date(data.endDate).toDateString().slice(3, 10)}, ${new Date(data.endDate)
-			.toDateString()
-			.slice(-4)}`;
+		const endMonth = new Date(data.endDate)
+			.toLocaleString('default', { month: 'long' })
+			.slice(0, 3);
+		const endYear = new Date(data.endDate).getFullYear();
+
+		end = `${endMonth} ${endYear}`;
 	} else {
 		end = 'Present';
 	}
